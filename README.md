@@ -1,5 +1,4 @@
-Objetivo:
-
+  Objetivo:
 - Sistema de CAA que utiliza rastreamento ocular e orientação da cabeça para controlar um teclado virtual assistido
 - Destinado a pessoas com dificuldades motoras severas.
 - Interface intuitiva e acessível para a comunicação escrita.
