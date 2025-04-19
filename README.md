@@ -1,17 +1,21 @@
-  Objetivo:
-- Sistema de CAA que utiliza rastreamento ocular e orientação da cabeça para controlar um teclado virtual assistido
-- Destinado a pessoas com dificuldades motoras severas.
-- Interface intuitiva e acessível para a comunicação escrita.
-- Modelo de linguagem com recomendações de palavras
+# AUGMENTATIVE AND ALTERNATIVE COMMUNICATION USING EYE TRACKING AND WORD RECOMMENDATION USING LANGUAGE MODELS
+![Uploading image.png…]()
 
-  Motivação:
-- Auxiliar pessoas com dificuldades motoras severas a se comunicarem.
-- A contribuição está na simplificação desta interação, fazendo uso de equipamentos facilmente encontrados em computadores convencionais e de baixo custo.
-- Treinamentos específicos e individuais.
+YOLO-SORT vehicle counting with YOLOv5 7.0
 
-  Métricas:
+All the code was developed in python, for an adequate use of the code you need to download:
 
-- Reconhecimento facial, utilizando como métrica principal a taxa de acerto.
-- Precisão da CNN a partir da quantidade de erros.
-- Efetividade do sistema de recomendação, dado a avaliação do ML.
+- The videos source is the research https://doi.org/10.3390/electronics10192363
+- The repository for YOLOv5 is avalaible in https://github.com/ultralytics/yolov5
+- The COOCO-Vehicle dataset used for General Trainning Phase is avalaible in https://drive.google.com/drive/folders/1HQtGHGM_pmWtyuisVHNnhINs2J-ZZ-a7?usp=sharing
+- The Traffic Flow Popayan dataset used for Specific Trainning Phase is avalaible in https://drive.google.com/drive/folders/1HcViJ40qwblKnWkp3_WAHby_vUxxEUB7?usp=sharing
+- The YOLOv5-L obtained after the general and specific trainnin - yolov5l_VC.pt is avalaible in https://drive.google.com/file/d/1-RoOpjif7U2iAIR1aTVfLJmgp7SzWM8D/view?usp=sharing
+- TrainYOLO.py and YOLO_SORT_VehicleCounting.py are avalaible in this repository.
 
+# Options
+For each option you must to download the repository for YOLOv5
+# # Trainning
+For trainning you must to download the datasets and to execute TrainYOLO.py 
+
+# # Vehicle counting and tracking
+For vehicle counting and tracking you must to download the videos, yolov5l_VC.pt and to execute YOLO_SORT_VehicleCounting.py
