@@ -12,7 +12,7 @@ The system consists of three main stages:
 
 Additionally, it includes:
 - 📚 An **N-gram Language Model** to enhance typing prediction.
-- 📉 A **Perplexity Analysis** tool to evaluate prediction accuracy.
+- 📉 A **Perplexity Analysis** tool to evaluate the Langue Model.
 
 ---
 
@@ -31,13 +31,14 @@ Additionally, it includes:
 
 ## ⚙️ Requirements
 
-- 🐍 Python ≥ 3.8  
+- 📦 Python ≥ 3.8  
 - 📦 [OpenCV](https://opencv.org/)  
 - 📦 [Dlib](http://dlib.net/)  
 - 📦 [Scikit-learn](https://scikit-learn.org/)  
 - 📦 Pandas  
 - 📦 NumPy  
-- 📊 Matplotlib
+- 📦 Matplotlib
+- Others listed in the requirements.txt file 
 
 ---
 
@@ -46,10 +47,9 @@ Additionally, it includes:
 1. Run `1_collect_data.ipynb` to collect training data.
 2. Run `2_train_model.ipynb` to train the eye-gaze prediction model.
 3. Run `3_eyetracker.ipynb` to interact with the assistive virtual keyboard.
-4. Optionally, run `Ngram.ipynb` and `perplexity.ipynb` to improve and evaluate typing predictions.
+4. Run `Ngram.ipynb` and `perplexity.ipynb` to improve and evaluate typing predictions.
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License**.
+## 📝 Project summary and operation video
+https://youtu.be/IxYg2ublR-0
