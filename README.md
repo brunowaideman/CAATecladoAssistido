@@ -23,7 +23,7 @@ Additionally, it includes:
 | `1_collect_data.ipynb` | Captures eye movement data during typing. |
 | `2_train_model.ipynb` | Trains a classification model using collected data. |
 | `3_eyetracker.ipynb` | Virtual keyboard interface using the eye-tracking model. |
-| `EyeTrackerEyeChimera.ipynb` | Alternative version using the EyeChimera API. |
+| `EyeTrackerEyeChimera.ipynb` | Alternative version using the EyeChimera databse. |
 | `Ngram.ipynb` | Builds the N-gram language model. |
 | `perplexity.ipynb` | Calculates perplexity to evaluate language model accuracy. |
 
