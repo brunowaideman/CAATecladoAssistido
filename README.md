@@ -1,93 +1,55 @@
+# 👁️‍🗨️ AUGMENTATIVE AND ALTERNATIVE COMMUNICATION USING EYE TRACKING AND WORD RECOMMENDATION USING LANGUAGE MODELS
 
-# 🧠 EyeTracker com Coleta, Treinamento e Predição em Tempo Real
+## 🧠 Overview
 
-Este projeto implementa um sistema completo de *eye tracking* (rastreamento ocular), com coleta de dados via webcam, treinamento de modelos baseados em visão computacional e redes neurais, e utilização do modelo treinado para predição do olhar em tempo real.
+This project aims to develop an **assistive virtual keyboard** that uses **eye-tracking** technology for text input. It is especially designed for users with **motor disabilities**, enabling them to interact with a computer using only **eye movements**.
 
----
+The system consists of three main stages:
 
-## 📁 Estrutura do Projeto
+1. 🎯 **Data Collection**: Gathers eye gaze data while the user selects characters on the screen using a traditional input method.
+2. 🧪 **Model Training**: Trains a machine learning model to predict the selected character based on the eye data.
+3. 💬 **Virtual Keyboard Interaction**: Allows typing using only the eyes through a virtual keyboard interface powered by the trained model.
 
-- `1_collect_data.ipynb`: Interface para coletar imagens dos olhos, rosto e posição da cabeça, junto da posição de um alvo na tela.
-- `2_train_model.ipynb`: Treinamento de um modelo de rede neural para estimar a posição do olhar a partir das imagens coletadas.
-- `3_eyetracker.ipynb`: Código que utiliza o modelo treinado para prever, em tempo real, onde o usuário está olhando.
-- `EyeTrackerEyeChimera.ipynb`: Alternativa com uso de detecção facial pelo modelo EyeChimera.
-- `Ngram.ipynb` e `perplexidade.ipynb`: Avaliação de modelos de linguagem e complexidade de digitação, voltado para integração com teclado assistivo (opcional/experimental).
-
----
-
-## ⚙️ Funcionalidades
-
-- 📷 Coleta automática de imagens com webcam (olhos, rosto e posição da cabeça).
-- 🎯 Interface gráfica com pygame para calibração e coleta de dados em diferentes regiões da tela.
-- 🧠 Treinamento de modelo de aprendizado profundo com PyTorch para prever posição do olhar.
-- 👁️ Rastreamento ocular em tempo real com predição do ponto de foco do usuário.
-- 🧪 Visualização de cobertura da tela e taxa de coleta de dados.
+Additionally, it includes:
+- 📚 An **N-gram Language Model** to enhance typing prediction.
+- 📉 A **Perplexity Analysis** tool to evaluate prediction accuracy.
 
 ---
 
-## 🛠️ Requisitos
+## 🗂️ Project Structure
 
-- Python 3.8+
-- Bibliotecas:
-  - `pygame`
-  - `cv2` (OpenCV)
-  - `numpy`
-  - `scipy`
-  - `torch`
-  - `matplotlib`
-
----
-
-## 🚀 Como usar
-
-### 1. Coletar dados
-
-```bash
-python collect_data.py
-```
-
-- Pressione `1` para calibrar (dados em pontos fixos).
-- Pressione `2` para coletar dados com alvos móveis.
-- Use `c` para mostrar a câmera e `s` para mostrar estatísticas.
-
-### 2. Treinar o modelo
-
-Execute o notebook:
-
-```bash
-2_train_model.ipynb
-```
-
-- Treina um modelo para prever a posição do olhar com base nas imagens dos olhos e rosto.
-
-### 3. Usar o Eye Tracker
-
-```bash
-python eyetracker.py
-```
-
-- Pressione `3` para entrar no modo de rastreamento.
-- O modelo usará a webcam para estimar em tempo real onde você está olhando.
+| File | Description |
+|------|-------------|
+| `1_collect_data.ipynb` | Captures eye movement data during typing. |
+| `2_train_model.ipynb` | Trains a classification model using collected data. |
+| `3_eyetracker.ipynb` | Virtual keyboard interface using the eye-tracking model. |
+| `EyeTrackerEyeChimera.ipynb` | Alternative version using the EyeChimera API. |
+| `Ngram.ipynb` | Builds the N-gram language model. |
+| `perplexity.ipynb` | Calculates perplexity to evaluate language model accuracy. |
 
 ---
 
-## 📊 Dados gerados
+## ⚙️ Requirements
 
-Os dados são armazenados em:
-
-- `data/face/`, `l_eye/`, `r_eye/`, etc: imagens coletadas.
-- `data/positions.csv`: arquivo CSV com posição do alvo e ângulo da cabeça.
-- `data/region_map.npy`: mapa da distribuição de coleta de dados na tela.
-
----
-
-## 📌 Observações
-
-- O sistema foi desenvolvido para pesquisas em interação assistiva.
-- Pode ser adaptado para tarefas como controle por olhar, análise de atenção e sistemas alternativos de entrada.
+- 🐍 Python ≥ 3.8  
+- 📦 [OpenCV](https://opencv.org/)  
+- 📦 [Dlib](http://dlib.net/)  
+- 📦 [Scikit-learn](https://scikit-learn.org/)  
+- 📦 Pandas  
+- 📦 NumPy  
+- 📊 Matplotlib
 
 ---
 
-## 🤝 Agradecimentos
+## 🚀 How to Run
 
-Agradecemos ao Centro Universitário da FEI, ao Comitê de Ética e aos voluntários participantes do experimento pelos suportes para o desenvolvimento do presente trabalho.
+1. Run `1_collect_data.ipynb` to collect training data.
+2. Run `2_train_model.ipynb` to train the eye-gaze prediction model.
+3. Run `3_eyetracker.ipynb` to interact with the assistive virtual keyboard.
+4. Optionally, run `Ngram.ipynb` and `perplexity.ipynb` to improve and evaluate typing predictions.
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
